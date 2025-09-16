@@ -1,14 +1,19 @@
+body {
+    background-color:lightyellow;
+    max-width: 65%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 h1 {
     color: mediumseagreen;
 }
 h2 {
-    color: cadetblue;
+    color:darkolivegreen;
 }
 h3 {
-    color:darkcyan;
+    color:darkolivegreen;
 }
 p {
-	color: mediumpurple;
+	color:darkseagreen;
 }
 a {
     color:orchid;
