@@ -1,0 +1,18 @@
+h1 {
+    color: mediumseagreen;
+}
+h2 {
+    color: cadetblue;
+}
+h3 {
+    color:darkcyan;
+}
+p {
+	color: mediumpurple;
+}
+a {
+    color:orchid;
+}
+a:hover {
+    color: chartreuse;
+}  
