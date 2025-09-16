@@ -1,7 +1,12 @@
+#container {
+width: auto;
+height: auto;
+padding: 50px;
+}
 body {
     background-color:lightyellow;
     max-width: 65%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1 {
     color: mediumseagreen;
@@ -17,7 +22,11 @@ p {
 }
 a {
     color:orchid;
+    display:inline-block;
+    padding: 3px;
+    border: dashed 1px orchid
 }
 a:hover {
     color: chartreuse;
 }  
+
