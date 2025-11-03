@@ -1,0 +1,69 @@
+body {
+    background-color:cornsilk;
+    font-family:'Courier New', Courier, monospace;
+    display:block;
+    margin-top: 10%;
+     margin-bottom: 10%;
+    margin-right: 10%;
+    Margin-left: 10%;
+    border: goldenrod double 3px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: auto;
+}
+
+h1 {
+    color:darkolivegreen;
+}
+
+h2 {
+    color:darkolivegreen;
+    font-style: italic;
+}
+
+h3 {
+    color:olive;
+    font-weight: lighter;
+}
+
+h4 {
+    color:olive;
+    font-size: smaller;
+    font-weight: lighter;
+    text-align: right;
+}
+
+
+a {
+    color: olive;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: goldenrod;
+    padding: 0px 3px 0px 3px;
+    border: dashed 1px goldenrod;
+    font-style: italic;
+}
+
+#canvas {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+#poetry{
+    align-items: center;
+    text-align:left
+}
+
+.hover-text {
+  display: none; 
+}
+
+.hover-container:hover .hover-text {
+  display: block; 
+}
