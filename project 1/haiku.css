@@ -67,6 +67,13 @@ a:hover {
     padding-bottom: 3%;
 }
 
+#foot{
+    padding-top: 0.5%;
+    font-size: smaller;
+    text-align: right;
+    color: goldenrod
+}
+
 .topnav {
   padding-left: 4%;
   padding-bottom: 1%;
@@ -92,3 +99,4 @@ a:hover {
   background-color: transparent;
   color: olivedrab;
 }
+
