@@ -9,20 +9,31 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="haiku.css">
+    <style>
+        img:hover {
+            border: dashed 1px goldenrod;
+            padding: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <script>
-        alert('Hi! I am glad you found your way here :)');
-    </script>
-    <div id="canvas">
+    <div id="canvas" style="padding-bottom: 0.5%;">
         <h1>Welcome!</h1>
         <br>
-        <h2>☀ This is the beginning of our <em>Haiku</em> tour ☀</h2>
+        <h2>☀ This is the beginning of our Haiku tour ☀</h2>
         <br>
-        <a href="./1-defination.html">What is Haiku?</a>
+        <h3>
+            “<a href="./1-defination.html">What is Haiku?</a>”
+        </h3>
         <br>
-        <br>
-        <a href="./2-somewhere.html">Take Me Somewhere</a>
+        <h3>
+            “Take me somewhere!”
+            <br>
+            ↓
+        </h3>
+        <a href="./2-somewhere.html" style="border: none;">
+            <img src="./images/door.svg" alt="door" width="200px">
+        </a>
     </div>
 </body>

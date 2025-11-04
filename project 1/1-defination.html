@@ -9,47 +9,84 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="haiku.css">
+    <style>
+        img:hover {
+            border: dashed 1px goldenrod;
+            padding: 5px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .spanDIV:hover+.hide {
+            display: block;
+            color: goldenrod;
+            font-style: italic;
+            font-size: smaller;
+        }
+
+        .spanDIV {
+            text-decoration: underline dotted 2px;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="canvas">
-        <div class="hover-container">
-            <h2 style="text-decoration: underline;">
-                What
-            </h2>
-            <span class="hover-text">
-                <h3 style="text-align: left; max-width:50%;">
-                    Rules:
-                    <br>
-                    <br>
-                    Verse form most often composed, in English versions, of three unrhymed
-                    lines of five, seven, and five syllables.
-                    <br>
-                    <br>
-                    Verse form most often composed, in English versions, of three
-                    unrhymed lines of five, seven, and five syllables.
-                    <br>
-                    <br>
-                    A haiku often features an image, or a pair of images,
-                    meant to depict the essence of a specific moment in time.
-                </h3>
-            </span>
-        </div>
-        <h2> is </h2>
-        <div class="hover-container">
-            <h2 style="text-decoration: underline;">
-                it?
-            </h2>
-            <span class="hover-text">
-                <h3 style="text-align: left;">
-                    ◼︎◼︎◼︎◼︎◼︎
-                    <br>
-                    ◼︎◼︎◼︎◼︎◼︎◼︎◼︎
-                    <br>
-                    ◼︎◼︎◼︎◼︎◼︎
-                </h3>
-            </span>
-        </div>
-        <a href="./2-somewhere.html">I am Ready! Take Me Somewhere</a>
+    <div id="canvas" style="padding-bottom: 0;">
+        <h3>
+            Haiku (俳句) is a short Japanese poem that presents
+            <br>
+            the world objectively and contrasts two different images.
+        </h3>
+        <br>
+        <h3 style="text-align: center;">
+            There are three basic rules for writing haiku:
+            <br>
+            <br>
+            <div class="spanDIV">1. 5-7-5 Structure</div>
+            <div class="hide">
+                <br>
+                Traditional Japanese haiku consist of three phrases
+                <br>
+                composed of 17 morae in a 5, 7, 5 pattern
+            </div>
+            <br>
+            <div class="spanDIV">2. Seasonal Elements</div>
+            <div class="hide">
+                <br>
+                Haiku have specific words you have to use.
+                <br>
+                These are called kigo (季語), or seasonal words.
+                <br>
+                For example, frog (蛙) represents spring, and moon (月つき) is normally an autumn kigo
+            </div>
+            <br>
+            <div class="spanDIV">3. A "Cutting" Word</div>
+            <div class="hide">
+                <br>
+                A cutting word, called kireji (切れ字き),
+                <br>
+                has no direct equivalent in English, or most other languages.
+                <br>
+                Kireji act like punctuation in haiku that mark emphasis, juxtaposition, etc.
+            </div>
+            <br>
+            <br>
+            Each has its own important place in the anatomy of haiku.
+        </h3>
+        <br>
+        <br>
+        <br>
+        <h2>
+            “I am ready! Take me somewhere”
+            <br>
+            ↓
+            <br>
+            <a href="./2-somewhere.html" style="border: none;">
+                <img src="./images/door.svg" alt="door" width="200px">
+            </a>
+        </h2>
+    </div>
     </div>
 </body>

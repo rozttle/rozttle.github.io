@@ -2,11 +2,10 @@ body {
     background-color:cornsilk;
     font-family:'Courier New', Courier, monospace;
     display:block;
-    margin-top: 10%;
-     margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     margin-right: 10%;
     Margin-left: 10%;
-    border: goldenrod double 3px;
     padding-left: 5%;
     padding-right: 5%;
     width: auto;
@@ -14,11 +13,13 @@ body {
 
 h1 {
     color:darkolivegreen;
+    font-weight: normal;
 }
 
 h2 {
     color:darkolivegreen;
     font-style: italic;
+    font-weight:normal;
 }
 
 h3 {
@@ -47,23 +48,22 @@ a:hover {
 }
 
 #canvas {
+    border: goldenrod double 3px;
     padding-top: 5%;
     padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     display: block;
-    justify-content: center;
-    align-content: center;
     text-align: center;
+    margin:auto;
 }
 
 #poetry{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align:left
+    text-align:left;
+    padding-top: 5%;
+    padding-bottom: 3%;
 }
 
-.hover-text {
-  display: none; 
-}
-
-.hover-container:hover .hover-text {
-  display: block; 
-}
