@@ -67,3 +67,28 @@ a:hover {
     padding-bottom: 3%;
 }
 
+.topnav {
+  padding-left: 4%;
+  padding-bottom: 1%;
+  overflow: hidden;
+}
+
+.topnav a {
+  color: goldenrod;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+    color: olive;
+    border: none;
+    font-style: normal;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: transparent;
+  color: olivedrab;
+}
