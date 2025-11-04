@@ -10,6 +10,46 @@ body {
     padding-right: 5%;
     width: auto;
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.innout {
+  animation: fadeInOut 3.5s infinite alternate ease-in-out;
+}
+
+.innout2 {
+  animation: fadeInOut 2.5s infinite alternate ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 10%; 
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 10%;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 100%; 
+  }
+  50% {
+    opacity: 10%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 
 h1 {
     color:darkolivegreen;
@@ -59,12 +99,17 @@ a:hover {
 }
 
 #poetry{
+    animation: fadeIn 2.5s forwards;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align:left;
     padding-top: 5%;
     padding-bottom: 3%;
+}
+
+img {
+    animation: fadeIn 3.5s forwards;
 }
 
 #foot{
@@ -86,6 +131,7 @@ a:hover {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 25px;
+  animation: none;
 }
 
 .topnav a:hover {
