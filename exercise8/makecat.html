@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Make Cats!</title>
+    <style>
+        body {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 15%;
+            background-color: lightblue;
+            color: lightcoral;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 28px;
+        }
+
+        button {
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            background-color: beige;
+            color: lightcoral;
+            border-style: none;
+            border-radius: 10px;
+            font-family: 'Courier New';
+        }
+
+        button:hover {
+            background-color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="inc">More Cat!</button>
+    <button id="dec">Less Cat!</button>
+    <button id="reset">Reset! Meow</button>
+    <br>
+    <br>
+    1 cat ฅ^•⩊•^ฅ
+    <div id="cats"></div>
+
+    <script>
+        let count = 2;
+        const display = document.getElementById('cats');
+
+        function makeCats() {
+            display.innerHTML = '';
+            for (let i = 2; i <= count; i++) {
+                display.innerHTML += `${i} cats ฅ^•⩊•^ฅ <br>`;
+            }
+        }
+
+
+        document.getElementById("inc").addEventListener("click", () => {
+            count++;
+            makeCats();
+        });
+
+        document.getElementById("dec").addEventListener("click", () => {
+            if (count > 1) count--;
+            makeCats();
+        });
+
+        document.getElementById("reset").addEventListener("click", () => {
+            count = 1;
+            makeCats();
+        });
+
+        makeCats();
+    </script>
+</body>
