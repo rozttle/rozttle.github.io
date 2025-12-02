@@ -6,46 +6,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Minerva Project</title>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://use.typekit.net/tni0zyk.css">
     <link rel="stylesheet" href="minerva.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lig7zkm.css">
 </head>
 
 <body>
+    <div id="heading">
+        <img src="./media/logo.png" alt="logo" width="100pxx" height="auto">
+    </div>
+    <div id="section1">
+        <h1>Project Minerva</h1>
+        <h3 class="floater">
+            Congratulation to the crew members of MINERVA ONE for the successful launching!
+            <br>
+            <br>
+            SAFE TRAVELS!
+        </h3>
+        <div class="barcontainer">
+            <div class="bar-labels">
+                <h3>Distance Traveled:</h3>
+                <h3 id="demo">0%</h3>
+            </div>
 
-    <div class="barcontainer">
-        <div class="progress-bg">
-            <div id="myBar" class="progress-bar"></div>
+            <div class="progress-bg">
+                <div id="myBar" class="progress-bar"></div>
+            </div>
+        </div>
+        <button class="btn floater2" onclick="move()">Time Jump!</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h5>
+            (Read the latest news
+            <br>
+            from space below)
+        </h5>
+    </div>
+    <div id="section2">
+        <h2>Latest Updates from the Crew</h2>
+        <hr>
+        <div class="update" id="u0">
+            <h5>02/04/2302 (23:01 GMT+6)</h5>
+            <p>
+                MINERVA ONE leaves the Earth's Atmosphere.
+            </p>
         </div>
 
-        <p id="demo">0%</p>
+        <div class="update" id="u1">
+            <h5>28/06/2302 (03:24 GMT+6)</h5>
+            <p>
+                MINERVA ONE passes saturn, capturning breath-taking photos.
+            </p>
+        </div>
 
-        <button class="btn" onclick="move()">Time Jump!</button>
+        <div class="update" id="u2">
+            <h5>17/08/2302 (15:09 GMT+6)</h5>
+            <p>
+                MINERVA ONE reaches the edge of the solar system. Goodbye, sunshine!
+            </p>
+        </div>
+
+        <div class="update" id="u3">
+            <h5>17/08/2302 (15:09 GMT+6)</h5>
+            <p>
+                MINERVA ONE reaches the edge of the solar system. Goodbye, sunshine!
+            </p>
+        </div>
+
+        <div class="update" id="u4">
+            <h5>17/08/2302 (15:09 GMT+6)</h5>
+            <p>
+                MINERVA ONE reaches the edge of the solar system. Goodbye, sunshine!
+            </p>
+        </div>
+
+        <div class="update" id="u5">
+            <h5>17/08/2302 (15:09 GMT+6)</h5>
+            <p>
+                MINERVA ONE reaches the edge of the solar system. Goodbye, sunshine!
+            </p>
+        </div>
+
+        <div class="update" id="u6">
+            <h5>17/08/2302 (15:09 GMT+6)</h5>
+            <p>
+                MINERVA ONE reaches the edge of the solar system. Goodbye, sunshine!
+            </p>
+        </div>
+
+        <div class="update" id="u7">
+            <h5>17/08/2302 (15:09 GMT+6)</h5>
+            <p>
+                MINERVA ONE reaches the edge of the solar system. Goodbye, sunshine!
+            </p>
+        </div>
+
+        <div class="update" id="u8">
+            <h5>17/08/2302 (15:09 GMT+6)</h5>
+            <p>
+                MINERVA ONE reaches the edge of the solar system. Goodbye, sunshine!
+            </p>
+        </div>
+
+        <div class="update" id="u9">
+            <h5>17/08/2302 (15:09 GMT+6)</h5>
+            <p>
+                MINERVA ONE reaches the edge of the solar system. Goodbye, sunshine!
+            </p>
+        </div>
+
+    </div>
+    <div id="section3">
+        <h2>Mission Statement</h2>
+        <hr>
+        <p>
+            Project Minerva is a long-range exoplanetary research initiative focused on identifying a primitive,
+            life-supporting environment beyond the solar system. Project Minerva’s objective includes the controlled
+            revival of extinct keystone species whose absence has accelerated the degradation of Earth’s ecological
+            systems. Aboard MINERVA ONE, a multidisciplinary team of astronauts and paleo-biologists transports
+            preserved ancestral material to assess off-world viability, habitat compatibility, and long-term ecological
+            resilience.
+            <br>
+            <br>
+            Guided by contemporary re-wilding theory, Project Minerva operates on the premise that restoring prehistoric
+            biological networks may offer the only scientifically plausible pathway toward the recovery of Earth’s
+            future ecosystems.
+        </p>
     </div>
 
-    <script>
-        function move() {
-            const elem = document.getElementById("myBar");
-            const label = document.getElementById("demo");
-
-            let current = parseInt(elem.style.width) || 0;
-
-            let target = current + 10;
-            if (target > 100) target = 100;
-
-            let id = setInterval(frame, 10);
-
-            function frame() {
-                if (current >= target) {
-                    clearInterval(id);
-                } else {
-                    current++;
-                    elem.style.width = current + '%';
-                    label.innerHTML = current + '%';
-                }
-            }
-        }
-    </script>
-
+    <script src="java.js"></script>
 </body>
 
 </html>

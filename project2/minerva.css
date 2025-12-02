@@ -1,48 +1,191 @@
-  body {
-            font-family: "new-astro", "new-astro", sans-serif;
-            color: #32CD99;
-            background-color: black;
-        }
+body {
+    color: #32CD99;
+    background-color: black;
+    background-image: url('media/space.jpeg');
+    background-attachment:fixed;
+    background-size: cover;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
 
-        .barcontainer {
-            padding: 20px;
-            max-width: 600px;
-            margin: auto;
-            align-items: center;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
-        }
+h1 {
+    font-family: "unbounded", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
-        .progress-bg {
-            background-color: transparent;
-            border: dashed, 2px, #32CD99;
-            width: 100%;
-            border-radius: 10px;
-        }
+h2 {
+    font-family: "unbounded", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: large;
+}
 
-        .progress-bar {
-            background-color: #32cd99;
-            height: 25px;
-            width: 0.1%;
-            border-radius: 10px;
-            transition: width 0.1s linear;
-        }
+h3 {
+    font-family: "monotalic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
-        .btn {
-            background-color: transparent;
-            color: #32CD99;
-            padding: 8px 16px;
-            border: dashed, 2px, #32CD99;
-            margin-top: 12px;
-            cursor: pointer;
-            border-radius: 10px;
-            font-size: 12px;
-        }
+h5 {
+    font-family: "monotalic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
 
-        .btn:hover {
-            background-color: #32CD99;
-            color: aliceblue;
-        }
+p {
+   font-family: "monotalic", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+}
 
-        p {
-            font-weight: bold;
-        }
+hr {
+  border-color: #32CD99;
+}
+
+a {
+color: #32CD99;
+text-decoration: none;
+}
+
+a:hover {
+color:aliceblue;
+text-decoration: none;
+}
+
+
+#heading {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#heading2 {
+    display: inline-flex;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 5%;
+}
+
+#section1 {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+    text-align: center;
+    margin:auto;
+}
+
+#section2 { 
+    border: #32CD99 dashed 1px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding:20px;
+    max-width: 1000px;
+    display: inline-flexbox;
+    text-align: left;
+}
+
+#section3 { 
+    border: #32CD99 dashed 1px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding:20px;
+    max-width: 1000px;
+    display: inline-flexbox;
+    text-align: left;
+}
+
+.barcontainer {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    align-items: center;
+}
+
+.bar-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.bar-labels h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.progress-bg {
+    background-color: transparent;
+    padding: 5px;
+    border: dashed 1px #32CD99;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background-color: #32cd99;
+    height: 25px;
+    width: 0.1%;
+    border-radius: 10px;
+    transition: width 0.1s linear;
+}
+
+.btn {
+    background-color: transparent;
+    color: #32CD99;
+    padding: 8px 16px;
+    border: dashed 1px #32CD99;
+    margin-top: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: "monotalic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn:hover {
+    background-color: #32CD99;
+    color: aliceblue;
+}
+
+.update {
+    display: none;
+}
+
+.update.active {
+    display: block;
+}
+
+.floater {
+    animation: floaty 2.5s ease-in-out infinite;
+}
+
+.floater2 {
+    animation: floaty2 3s ease-in-out infinite;
+}
+
+@keyframes floaty {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes floaty2 {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(+4px); }
+    60% { transform: translateY(+8px); }
+    100% { transform: translateY(0); }
+}
+
+      
