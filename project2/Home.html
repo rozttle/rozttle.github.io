@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Minerva Project</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://use.typekit.net/tni0zyk.css">
+    <link rel="stylesheet" href="minerva.css">
+</head>
+
+<body>
+
+    <div class="barcontainer">
+        <div class="progress-bg">
+            <div id="myBar" class="progress-bar"></div>
+        </div>
+
+        <p id="demo">0%</p>
+
+        <button class="btn" onclick="move()">Time Jump!</button>
+    </div>
+
+    <script>
+        function move() {
+            const elem = document.getElementById("myBar");
+            const label = document.getElementById("demo");
+
+            let current = parseInt(elem.style.width) || 0;
+
+            let target = current + 10;
+            if (target > 100) target = 100;
+
+            let id = setInterval(frame, 10);
+
+            function frame() {
+                if (current >= target) {
+                    clearInterval(id);
+                } else {
+                    current++;
+                    elem.style.width = current + '%';
+                    label.innerHTML = current + '%';
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
